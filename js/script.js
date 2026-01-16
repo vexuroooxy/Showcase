@@ -54,17 +54,3 @@ function validateForm() {
     document.getElementById("contact-form").reset();
   }
 }
-
-function showError(fieldId, message) {
-  const field = document.getElementById(fieldId);
-  const errorMessage = field.nextElementSibling;
-  errorMessage.innerText = message;
-}
-function clearErrors() {
-  const errorMessages = document.querySelectorAll(".error-message");
-  errorMessages.forEach((msg) => (msg.innerText = ""));
-}
-function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(String(email).toLowerCase());
-}
