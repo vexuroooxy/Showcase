@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Google Sans Flex", sans-serif;
 }
 
 body {
-  font-family: "Google Sans Flex", sans-serif;
   scroll-behavior: smooth;
   background-color: #f4f4f4;
   color: #333;
