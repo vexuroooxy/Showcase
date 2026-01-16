@@ -20,54 +20,155 @@
     <!-- Header -->
     <header class="navbar">
       <nav class="navbar-nav">
-        <div class="navbar-logo">MyPortfolio</div>
+        <div class="navbar-logo">Sandhika Galih</div>
         <ul class="navbar-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="navbar-theme">
+          <button id="theme-switch">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+              />
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
 
     <!-- Main -->
-    <main class="container">
+    <main class="hero-section">
+      <!-- Home -->
       <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is a showcase of my work and skills.</p>
+        <img src="image/sandhika.jpg" alt="Photo" width="200" />
+        <h1>Sandhika Galih</h1>
+        <p>Lecturer | Content Creator</p>
       </section>
 
+      <!-- About -->
       <section id="about">
-        <h2>About Me</h2>
-        <p>Brief introduction about myself.</p>
+        <h1>About Me</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolore
+          cumque eligendi omnis! Veniam quibusdam quae eos esse dolores fugiat
+          qui blanditiis pariatur, cumque, hic culpa delectus magnam laboriosam.
+          Rem, ad! Dolor necessitatibus nostrum quod nihil explicabo animi
+          minima, optio est eveniet ratione nisi earum consectetur repellendus!
+          At labore neque, voluptas reiciendis dignissimos tempore enim illo eos
+          aliquid voluptatibus!
+        </p>
       </section>
 
-      <section id="team">
-        <h2>Meet the Team</h2>
-        <div class="team-members">
-          <!-- Team member profiles will go here -->
-        </div>
-      </section>
-
+      <!-- Projects -->
       <section id="projects">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
         <div class="project-list">
-          <!-- Project items will go here -->
+          <div class="project-item">
+            <div class="project-card">
+              <img
+                src="image/projects/2.jpg"
+                alt="Photo Projects"
+                width="300"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quisquam , quod.
+              </p>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-card">
+              <img
+                src="image/projects/2.jpg"
+                alt="Photo Projects"
+                width="300"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quisquam , quod.
+              </p>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-card">
+              <img
+                src="image/projects/4.jpg"
+                alt="Photo Projects"
+                width="300"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quisquam , quod.
+              </p>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-card">
+              <img
+                src="image/projects/5.jpg"
+                alt="Photo Projects"
+                width="300"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quisquam , quod.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- Contact -->
       <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
+        <h1>Contact Us</h1>
+        <div class="container-contact">
+          <form id="contact-form">
+            <label class="form-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              required
+              autocomplete="off"
+            />
+            <label class="form-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+              autocomplete="off"
+            />
+            <label class="form-label">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -76,7 +177,7 @@
       <p>&copy; 2026 MyPortfolio. All rights reserved.</p>
     </footer>
 
-    <!-- JS -->
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
   </body>
 </html>
